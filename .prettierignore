@@ -1,0 +1,29 @@
+# Ignore build outputs
+dist
+build
+
+# Ignore node_modules
+node_modules
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore environment variables
+.env
+.env.* 
+
+# Ignore coverage and log files
+coverage
+*.log
+
+# Ignore public assets (optional)
+public
+
+# Ignore specific config files (optional)
+tailwind.config.js
+postcss.config.js
+
+# Ignore version control folders
+.git

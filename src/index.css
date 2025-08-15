@@ -11,6 +11,8 @@
   /* Custom Color Palette */
     --font-body: "Josefin Sans";
     --font-special: "Roboto";
+    --shadow-orange: 10px 10px 200px 150px rgba(240, 169, 79, 0.5);
+    --shadow-cyan: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
 
     --tw-shadow-cyandshadow: '0px 0px 20px 0px rgba(94, 186, 220, 0.5)';
 

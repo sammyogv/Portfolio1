@@ -2,6 +2,7 @@ import React from "react";
 import HeroText from "./HeroText.jsx";
 import HeroPic from "./HeroPic.jsx";
 import HeroGradient from "./HeroGradient.jsx";
+import SubHeroGradient from "./SubHeroSection.jsx";
 
 
 
@@ -14,6 +15,8 @@ function HeroMain(){
                 <HeroPic/>
             </div>
             <HeroGradient/>
+            <SubHeroGradient/>
+            
         </div>
     )
 }

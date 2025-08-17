@@ -6,7 +6,7 @@ import AboutMeMain from './components/aboutMeSection/AboutMeMain.jsx'
 import SkillMain from './components/skillsSection/skillMain.jsx'
 import Experiencemain from './components/experience/ExperienceMain.jsx'
 import ProjectMain from './components/projectsSection/ProjectMain.jsx'
-
+import ContactMeMain from './components/contactmeSection/ContactMeMain.jsx'
 
 function App() {
  
@@ -19,6 +19,7 @@ function App() {
        <SkillMain/>
        <Experiencemain/> 
        <ProjectMain/>
+       <ContactMeMain/>
       </main>
     </>
   )

@@ -5,6 +5,8 @@ import HeroMain from './components/hero/HeroMain.jsx'
 import AboutMeMain from './components/aboutMeSection/AboutMeMain.jsx'
 import SkillMain from './components/skillsSection/skillMain.jsx'
 import Experiencemain from './components/experience/ExperienceMain.jsx'
+import ProjectMain from './components/projectsSection/ProjectMain.jsx'
+
 
 function App() {
  
@@ -16,6 +18,7 @@ function App() {
        <AboutMeMain/>
        <SkillMain/>
        <Experiencemain/> 
+       <ProjectMain/>
       </main>
     </>
   )

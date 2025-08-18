@@ -8,9 +8,9 @@ function ContactMeMain(){
 
 
     return(
-        <div className="mt-[150px] mb-20 mx-auto">
+        <div id="contact" className="mt-[150px] mb-20 mx-auto">
             <ContactMeText/>
-            <div className="flex mt-10 bg-brown md:flex-row sm:flex-col sm:justify-center md:justify-around pt-8 flex-1 gap-12 items-center rounded-2xl">
+            <div className="flex pb-5 mt-10 bg-brown md:flex-row sm:flex-col sm:justify-center md:justify-around pt-8 flex-1 gap-12 items-center rounded-2xl">
                 <ContactMeLeft/>
                 <ContactMeRight/>
             </div>

@@ -1,4 +1,5 @@
-
+import { motion } from "motion/react"
+import { fadeIn } from "../../framerMotion/variants";
 import { FaArrowRight } from "react-icons/fa";
 import SingleExperience from "./SingleExperience.jsx";
 
@@ -49,7 +50,12 @@ function AllExperience(){
             {experience.map((exp, index) => (
                 <div className="flex justify-center gap-3 items-center ">
                     <SingleExperience key={index} experience={exp} />
-                    {index < 2 ? <FaArrowRight className="text-orange text-7xl sm:hidden md:block" /> : ""}
+                    {index < 2 ? <motion.div variants={fadeIn("down",0.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{once:false, amount:0}}
+                    
+                    ><FaArrowRight className="text-orange text-7xl sm:hidden md:block" /> </motion.div> : ""}
                 </div>
             ))}
         </div>

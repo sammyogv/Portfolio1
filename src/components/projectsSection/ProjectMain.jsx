@@ -4,6 +4,8 @@ import SingleProject from "./SingleProject.jsx";
 import image1 from "../../assets/images/website1.jpg";
 import image2 from "../../assets/images/website2.jpg";
 import image3 from "../../assets/images/website4.jpg";
+import { motion } from "motion/react"
+import { fadeIn } from "../../framerMotion/variants";
 
 
 
@@ -36,8 +38,15 @@ function ProjectMain(){
 
 
     return(
-       <div id="project" className="mx-auto max-w-[1200px] px-4 ">
+       <div id="projects" className="mx-auto max-w-[1200px] px-4 ">
+        <motion.div 
+        variants={fadeIn("right",0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{once:false, amount:0}}
+        >
           <ProjectText />
+        </motion.div>
           <div className="gap-20 mt-12 flex flex-col flex-1">
             {projects.map((project, index) => (
               <SingleProject key={index} {...project} />

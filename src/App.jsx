@@ -7,6 +7,8 @@ import SkillMain from './components/skillsSection/skillMain.jsx'
 import Experiencemain from './components/experience/ExperienceMain.jsx'
 import ProjectMain from './components/projectsSection/ProjectMain.jsx'
 import ContactMeMain from './components/contactmeSection/ContactMeMain.jsx'
+import FooterSection from './components/footerSection/FooterSection.jsx'
+
 
 function App() {
  
@@ -20,6 +22,7 @@ function App() {
        <Experiencemain/> 
        <ProjectMain/>
        <ContactMeMain/>
+       <FooterSection/>
       </main>
     </>
   )

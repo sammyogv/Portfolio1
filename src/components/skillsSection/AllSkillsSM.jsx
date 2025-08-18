@@ -6,6 +6,8 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import SkillText from "./SkillText";
 import SingleSkill from "./singleskill";
+import { motion } from "motion/react"
+import { fadeIn } from "../../framerMotion/variants";
 
 
 function AllSkillsSM(){
@@ -23,10 +25,15 @@ function AllSkillsSM(){
         <div>
             <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-7">
                 {skills.map((item, index) => (
-                    <div key={index} className="flex flex-col items-center">
+                    <motion.div 
+                    variants={fadeIn("right",0.4)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{once:false, amount:0.7}}
+                    key={index} className="flex flex-col items-center">
                         <item.icon className="text-6xl bg-orange"/>
                         <p className="mt-4 text-4xl text-white">{item.skill}</p>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

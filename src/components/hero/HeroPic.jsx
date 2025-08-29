@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react"
 import { fadeIn } from "../../framerMotion/variants";
-import heroImage from "../../assets/images/HexaPic.png";
+import heroImage from "../../assets/images/profile.jpeg";
 import { PiHexagonThin } from "react-icons/pi";
 
 
